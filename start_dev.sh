@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker run --gpus all -d -it -p 8848:8888 -v /home/cortereal/workspace:/home/jovyan/work -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes --user root cschranz/gpu-jupyter:v1.6_cuda-11.8_ubuntu-22.04_python-only
